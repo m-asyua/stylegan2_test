@@ -13,7 +13,9 @@ import tensorflow as tf
 # Silence deprecation warnings from TensorFlow 1.13 onwards
 import logging
 logging.getLogger('tensorflow').setLevel(logging.ERROR)
-import tensorflow.contrib   # requires TensorFlow 1.x!
+
+# import tensorflow.contrib   # requires TensorFlow 1.x!  #2025
+
 tf.contrib = tensorflow.contrib
 
 from typing import Any, Iterable, List, Union
